@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, OnDestroy, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input, OnDestroy } from '@angular/core';
 import { Beer } from "../../model/beer";
 
 @Component({
@@ -11,8 +11,6 @@ export class BeerComponent implements OnInit, OnDestroy {
   // @ts-ignore
   @Input() beer: Beer;
 
-  @Output() addToCartReq = new EventEmitter();
-
   constructor() { }
 
   ngOnInit(): void {
@@ -21,10 +19,6 @@ export class BeerComponent implements OnInit, OnDestroy {
 
   ngOnDestroy(): void {
     console.log(`Destroy beer ${this.beer.title}`);
-  }
-
-  public addToCart() {
-    this.addToCartReq.emit(this.beer.id);
   }
 
 }

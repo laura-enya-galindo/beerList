@@ -5,7 +5,7 @@
     <div class="container">
       <div class="row align-items-start text-center">
         <div class="col-4" *ngFor="let beer of beers">
-          <app-beer [beer]="beer" (addToCartReq)="addBeerToCart($event)"></app-beer>
+          <app-beer [beer]="beer"></app-beer>
         </div>
       </div>
     </div>
