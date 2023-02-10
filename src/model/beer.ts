@@ -1,6 +1,6 @@
 export interface Beer {
     "id": string;
-    "title": string;
-    "image": string;
-    "year": string;
+    "name": string;
+    "image_url": string;
+    "first_brewed": string;
   }

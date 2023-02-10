@@ -18,7 +18,7 @@ export class BeerComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
-    console.log(`Destroy beer ${this.beer.title}`);
+    console.log(`Destroy beer ${this.beer.name}`);
   }
 
 }

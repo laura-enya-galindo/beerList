@@ -10,7 +10,6 @@ import { Beer } from "../model/beer";
 export class AppComponent implements OnInit {
   public beers: Beer[] = [];
   public beer: any;
-  public displayThirdColumn = true;
   public serviceError = false;
 
   constructor(private beerService: BeerService) {
