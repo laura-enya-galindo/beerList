@@ -1,5 +1,7 @@
 # BeerList
 
+I created a service to call the API https://api.punkapi.com/v2/beers to get the beer list, and a component to display some of the beers' data.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.6.
 
 ## Development server
